@@ -74,7 +74,7 @@ This project includes 3 models:
 + __Script__: 1 Matlab Script
   + [portfolio_allocation.m](2_Portfolio_Allocation/portfolio_allocation.m): The function to perform mean-vairance and minimum-variance using the portfolio object in Financial Toolbox
 
-+ __Output__: 3 Excel files including the weights of every selected stock
++ __Output__: 3 Excel files performed by equally-weighted portfolio, mean-variance portfolio, and minimum-variance portfolio
   + [equally_weighted](Data/2-portfolio_data/equally_weighted_user8.xlsx) includes __tic__: the stock name, __predicted_return__: predicted return of next quarter by our model, __weights__: the weights to trade, __trade_date__: the date to execute the trades
   + [mean_weighted](Data/2-portfolio_data/mean_weighted_user8.xlsx) includes __tic__: the stock name, __predicted_return__: predicted return of next quarter by our model, __weights__: the weights to trade, __trade_date__: the date to execute the trades
   + [minimum_weighted](Data/2-portfolio_data/minimum_weighted_user8.xlsx) includes __tic__: the stock name, __predicted_return__: predicted return of next quarter by our model, __weights__: the weights to trade, __trade_date__: the date to execute the trades
