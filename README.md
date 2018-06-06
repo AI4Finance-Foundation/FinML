@@ -29,4 +29,11 @@ Retrieved from WRDS (Wharton Research Data Services), Compustat Industrial [dail
   + Timeline: 27 years (1990-2017)
   + Tickers: SPX
   + Value: Adjusted Daily Close Price
+  
+  ## Model:
+  This project incldues 3 models: 
+  + Focasting Model: Machine Learning Algorithms implemented in R
+  + Portfolio Allocation Model: Mean-Variance & Minimum-Variance implemented in Matlab
+  + Back-testing Model: Calculated in-sample & out-of-sample Sharpe Ratio in Python
+  
 
