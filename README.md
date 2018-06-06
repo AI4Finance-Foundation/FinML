@@ -1,13 +1,5 @@
 # Dynamic-Stock-Recommendation-Machine_Learning
 
-## Project summary：
-+ We developed a practical approach to using machine-learning methods selecting S&P 500 stocks based on financial ratios (e.g., EPS, ROA, ROE, etc). Outperformed the S&P 500 index on out of sample data, achieved a Sharpe ratio of 0.5 (0.19 on SPX).
-+ We performed feature selection by 11 GICS sectors based on a rolling window to choose the lowest MSE model among Linear Regression, Stepwise Regression, Regression with Ridge, Random Forest, and GBM. Applied a model ensemble method.
-
-![image](figs/chart10_insample.PNG)
-![image](figs/chart11_overallPerformance.PNG)
-
-
 ## First Author: Published paper on IEEE TrustCom 2018 (http://www.cloud-conf.net/trustcom18/)
 Hongyang Yang, Xiao-Yang Liu, Qingwei W. A Practical Machine Learning Approach for Dynamic Stock Recommendation. IEEE TrustCom 2018. 
 
@@ -16,6 +8,13 @@ Stock recommendation is vital to investment companies and investors. However, no
 
 ## Index Term: 
 Stock recommendation, fundamental value investing, machine learning, model selection, risk management
+
+## Project summary：
++ We developed a practical approach to using machine-learning methods selecting S&P 500 stocks based on financial ratios (e.g., EPS, ROA, ROE, etc). Outperformed the S&P 500 index on out of sample data, achieved a Sharpe ratio of 0.5 (0.19 on SPX).
++ We performed feature selection by 11 GICS sectors based on a rolling window to choose the lowest MSE model among Linear Regression, Stepwise Regression, Regression with Ridge, Random Forest, and GBM. Applied a model ensemble method.
+
+![image](figs/chart10_insample.PNG)
+![image](figs/chart11_overallPerformance.PNG)
 
 ## Data: 
 Retrieved from __WRDS (Wharton Research Data Services)__, Compustat Industrial [daily and quarterly Data]
