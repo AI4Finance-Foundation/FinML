@@ -13,5 +13,5 @@ Stock recommendation, fundamental value investing, machine learning, model selec
 Retrieved from WRDS (Wharton Research Data Services), Compustat Industrial [daily and quarterly Data]
 
 + S&P 500 Fundamental Quarterly Data (fundamental_final_table.xlsx) 
-  +Compustat North America Fundamentals Quarterly
+  + Compustat North America Fundamentals Quarterly
 
