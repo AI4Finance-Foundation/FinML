@@ -8,3 +8,7 @@ Stock recommendation is vital to investment companies and investors. However, no
 
 ## Index Term: 
 Stock recommendation, fundamental value investing, machine learning, model selection, risk management
+
+## Data: Retrieved from WRDS (Wharton Research Data Services), Compustat Industrial [daily and quarterly Data]
+
+
