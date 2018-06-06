@@ -12,19 +12,19 @@ Stock recommendation, fundamental value investing, machine learning, model selec
 ## Data: 
 Retrieved from WRDS (Wharton Research Data Services), Compustat Industrial [daily and quarterly Data]
 
-+ S&P 500 Fundamental Quarterly Data ([fundamental_final_table.xlsx](data/1-sp500_adj_price.csv.zip))
++ S&P 500 Fundamental Quarterly Data ([fundamental_final_table.xlsx](data/fundamental_final_table.xlsx))
   + Database: Compustat North America (Fundamentals Quarterly) and (Index Constituents)
   + Timeline: 27 years (1990-2017)
   + Tickers: 1193 stock (all historical S&P 500 component stocks)
   + Value: 20 financial ratios calculated from raw accouting report data
 
-+ S&P 500 Historical Component Stocks Adjusted Daily Price (1-sp500_adj_price.csv.zip)
++ S&P 500 Historical Component Stocks Adjusted Daily Price [1-sp500_adj_price.csv.zip](data/1-sp500_adj_price.csv.zip)
   + Database: Compustat North America (Security Daily)
   + Timeline: 27 years (1990-2017)
   + Tickers: 1193 stock (all historical S&P 500 component stocks)
   + Value: Adjusted Daily Close Price
   
-+ S&P 500 Index Daily Price (1-spx_price.xlsx)
++ S&P 500 Index Daily Price [1-spx_price.xlsx](data/1-spx_price.xlsx)
   + Database: Yahoo Finance
   + Timeline: 27 years (1990-2017)
   + Tickers: SPX
