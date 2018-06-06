@@ -1,6 +1,7 @@
 # Dynamic-Stock-Recommendation-Machine_Learning
 
-## First Author: Published paper on IEEE TrustCom 2018 (http://www.cloud-conf.net/trustcom18/)
+## First Author: Published paper on IEEE TrustCom 2018 
+(http://www.cloud-conf.net/trustcom18/)
 Hongyang Yang, Xiao-Yang Liu, Qingwei W. A Practical Machine Learning Approach for Dynamic Stock Recommendation. IEEE TrustCom 2018. 
 
 ## Abstract: 
@@ -9,6 +10,7 @@ Stock recommendation is vital to investment companies and investors. However, no
 ## Index Term: 
 Stock recommendation, fundamental value investing, machine learning, model selection, risk management
 
-## Data: Retrieved from WRDS (Wharton Research Data Services), Compustat Industrial [daily and quarterly Data]
+## Data: 
+Retrieved from WRDS (Wharton Research Data Services), Compustat Industrial [daily and quarterly Data]
 
 
