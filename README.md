@@ -12,19 +12,19 @@ Stock recommendation, fundamental value investing, machine learning, model selec
 ## Data: 
 Retrieved from WRDS (Wharton Research Data Services), Compustat Industrial [daily and quarterly Data]
 
-+ S&P 500 Fundamental Quarterly Data ([fundamental_final_table.xlsx](Data/fundamental_final_table.xlsx))
++ __S&P 500 Fundamental Quarterly Data__ ([fundamental_final_table.xlsx](Data/fundamental_final_table.xlsx))
   + Database: Compustat North America (Fundamentals Quarterly) and (Index Constituents)
   + Timeline: 27 years (1990-2017)
   + Tickers: 1193 stock (all historical S&P 500 component stocks)
   + Value: 20 financial ratios calculated from raw accouting report data
 
-+ S&P 500 Historical Component Stocks Adjusted Daily Price ([1-sp500_adj_price.csv.zip](Data/1-sp500_adj_price.csv.zip))
++ __S&P 500 Historical Component Stocks Adjusted Daily Price__ ([1-sp500_adj_price.csv.zip](Data/1-sp500_adj_price.csv.zip))
   + Database: Compustat North America (Security Daily)
   + Timeline: 27 years (1990-2017)
   + Tickers: 1193 stock (all historical S&P 500 component stocks)
   + Value: Adjusted Daily Close Price
   
-+ S&P 500 Index Daily Price ([1-spx_price.xlsx](Data/1-spx_price.xlsx))
++ __S&P 500 Index Daily Price__ ([1-spx_price.xlsx](Data/1-spx_price.xlsx))
   + Database: Yahoo Finance
   + Timeline: 27 years (1990-2017)
   + Tickers: SPX
@@ -32,8 +32,8 @@ Retrieved from WRDS (Wharton Research Data Services), Compustat Industrial [dail
   
   ## Model:
   This project incldues 3 models: 
-  + Focasting Model: Machine Learning Algorithms implemented in R
-  + Portfolio Allocation Model: Mean-Variance & Minimum-Variance implemented in Matlab
-  + Back-testing Model: Calculated in-sample & out-of-sample Sharpe Ratio in Python
+  + __Focasting Model__: Machine Learning Algorithms implemented in R
+  + __Portfolio Allocation Model__: Mean-Variance & Minimum-Variance implemented in Matlab
+  + __Back-testing Model__: Calculated in-sample & out-of-sample Sharpe Ratio in Python
   
 
