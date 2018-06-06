@@ -84,6 +84,18 @@ This project includes 3 models:
 
 ### __Back-testing Model__:
 
++ __Input__: 5 files
+  + [equally_weighted](Data/2-portfolio_data/equally_weighted_user8.xlsx) 
+  + [mean_weighted](Data/2-portfolio_data/mean_weighted_user8.xlsx) 
+  + [minimum_weighted](Data/2-portfolio_data/minimum_weighted_user8.xlsx) 
+  + [adjusted close price of S&P 500 stocks](Data/1-sp500_adj_price.csv.zip)
+  + [SPX adjusted close price)(Data/1-spx_price.xlsx)
+  
++ __Script__: 1 Python jupyter notebook Script
+  + [fundamental_back_testing.ipynb](3_Back-testing/fundamental_back_testing.ipynb): The back-testing function
+
++ __Output__: 1 Excel file inlcudes all quarterly return and Sharpe ratio
+
 
 
 
