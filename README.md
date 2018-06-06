@@ -18,7 +18,7 @@ Stock recommendation, fundamental value investing, machine learning, model selec
 ## Data: 
 Retrieved from __WRDS (Wharton Research Data Services)__, Compustat Industrial [daily and quarterly Data]
 
-+ __S&P 500 Fundamental Quarterly Data__ ([fundamental_final_table.xlsx](Data/fundamental_final_table.xlsx))
++ __S&P 500 Fundamental Quarterly Data__ ([fundamental_final_table.xlsx](data/fundamental_final_table.xlsx))
   + Database: Compustat North America (Fundamentals Quarterly) and (Index Constituents)
   + Timeline: 27 years (1990-2017)
   + Tickers: 1193 stock (all historical S&P 500 component stocks)
