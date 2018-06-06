@@ -31,7 +31,7 @@ Retrieved from __WRDS (Wharton Research Data Services)__, Compustat Industrial [
   + Value: Adjusted Daily Close Price
   
 ## Model:
-This project incldues 3 models: 
+This project includes 3 models: 
 + __Focasting Model__: Machine Learning Algorithms implemented in R
 + __Portfolio Allocation Model__: Mean-Variance & Minimum-Variance implemented in Matlab
 + __Back-testing Model__: Calculated in-sample & out-of-sample Sharpe Ratio in Python
