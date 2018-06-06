@@ -50,14 +50,14 @@ This project includes 3 models:
 + __Script__: (
   + [fundamental_run_model.R](1_Forcasting_model/fundamental_run_model.R): The main function to run the forecasting model
   + [fundamental_ML_model.R](1_Forcasting_model/fundamental_ML_model.R): The forecasting function (cornerstone of this project) 
-   Model Outputs: 
-   + 1. model test error to select models
-   + 2. trade period predicted return to select stocks
-   + 3. linear regression features
-   + 4. random forest features
-   + 5. ridge features
-   + 6. stepwise regression features
-   + 7. gbm features
+   + Model Outputs: 
+    1. model test error to select models
+    2. trade period predicted return to select stocks
+    3. linear regression features
+    4. random forest features
+    5. ridge features
+    6. stepwise regression features
+    7. gbm features
   + [fundamental_select_stock.R](1_Forcasting_model/fundamental_select_stock.R)
 + __Output__:
 
