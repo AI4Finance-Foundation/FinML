@@ -48,9 +48,9 @@ This project includes 3 models:
 ### __Focasting Model__:
 + __Input__: 11 Excel files of cleaned data about fundamental data (sector 10-Energy, sector 15-Materials, sector 20-Industrials, sector 25-Consumer Discretionary, sector 30-Consumer Staples, sector 35-Health Care, sector 40-Financials, sector 45-Information Technology, sector 50-Telecommunication Services, sector 55-Utilities, sector 60-Real Estate)
 + __Script__: 
-[fundamental_run_model.R](1_Forcasting model/fundamental_run_model.R)
-  + [fundamental_ML_model.R](1_Forcasting model/fundamental_ML_model.R)
-  + [fundamental_select_stock.R](1_Forcasting model/fundamental_select_stock.R)
+  + [fundamental_run_model.R](1_Forcasting_model/fundamental_run_model.R)
+  + [fundamental_ML_model.R](1_Forcasting_model/fundamental_ML_model.R)
+  + [fundamental_select_stock.R](1_Forcasting_model/fundamental_select_stock.R)
 + __Output__:
 
 
