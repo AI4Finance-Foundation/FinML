@@ -10,7 +10,7 @@ Stock recommendation is vital to investment companies and investors. However, no
 Stock recommendation, fundamental value investing, machine learning, model selection, risk management
 
 ## Data: 
-Retrieved from WRDS (Wharton Research Data Services), Compustat Industrial [daily and quarterly Data]
+Retrieved from __WRDS (Wharton Research Data Services)__, Compustat Industrial [daily and quarterly Data]
 
 + __S&P 500 Fundamental Quarterly Data__ ([fundamental_final_table.xlsx](Data/fundamental_final_table.xlsx))
   + Database: Compustat North America (Fundamentals Quarterly) and (Index Constituents)
@@ -30,10 +30,10 @@ Retrieved from WRDS (Wharton Research Data Services), Compustat Industrial [dail
   + Tickers: SPX
   + Value: Adjusted Daily Close Price
   
-  ## Model:
-  This project incldues 3 models: 
-  + __Focasting Model__: Machine Learning Algorithms implemented in R
-  + __Portfolio Allocation Model__: Mean-Variance & Minimum-Variance implemented in Matlab
-  + __Back-testing Model__: Calculated in-sample & out-of-sample Sharpe Ratio in Python
+## Model:
+This project incldues 3 models: 
++ __Focasting Model__: Machine Learning Algorithms implemented in R
++ __Portfolio Allocation Model__: Mean-Variance & Minimum-Variance implemented in Matlab
++ __Back-testing Model__: Calculated in-sample & out-of-sample Sharpe Ratio in Python
   
 
