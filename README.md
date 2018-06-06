@@ -1,7 +1,6 @@
 # Dynamic-Stock-Recommendation-Machine_Learning
 
-## First Author: Published paper on IEEE TrustCom 2018 
-(http://www.cloud-conf.net/trustcom18/)
+## First Author: Published paper on IEEE TrustCom 2018 (http://www.cloud-conf.net/trustcom18/)
 Hongyang Yang, Xiao-Yang Liu, Qingwei W. A Practical Machine Learning Approach for Dynamic Stock Recommendation. IEEE TrustCom 2018. 
 
 ## Abstract: 
