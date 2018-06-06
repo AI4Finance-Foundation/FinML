@@ -58,8 +58,8 @@ This project includes 3 models:
       5. ridge features
       6. stepwise regression features
       7. gbm features
-  + [fundamental_select_stock.R](1_Forcasting_model/fundamental_select_stock.R)
-+ __Output__:
+  + [fundamental_select_stock.R](1_Forcasting_model/fundamental_select_stock.R): The function to select top 20% stocks in each sector
++ __Output__: [a CSV file](Data/2-portfolio_data/stocks_selected_total_user8.csv) includes __tic__: the stock name, __predicted_return__: predicted return of next quarter by our model, __trade_date__: the date to execute the trades
 
 
 
