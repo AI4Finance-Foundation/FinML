@@ -16,5 +16,17 @@ Retrieved from WRDS (Wharton Research Data Services), Compustat Industrial [dail
   + Database: Compustat North America (Fundamentals Quarterly) and (Index Constituents)
   + Timeline: 27 years (1990-2017)
   + Tickers: 1193 stock (all historical S&P 500 component stocks)
-  + Factors: 20 financial ratios calculated from raw accouting report data
+  + Value: 20 financial ratios calculated from raw accouting report data
+
++ S&P 500 Historical Component Stocks Adjusted Daily Price (1-sp500_adj_price.csv.zip)
+  + Database: Compustat North America (Security Daily)
+  + Timeline: 27 years (1990-2017)
+  + Tickers: 1193 stock (all historical S&P 500 component stocks)
+  + Value: Adjusted Daily Close Price
+  
++ S&P 500 Index Daily Price (1-spx_price.xlsx)
+  + Database: Yahoo Finance
+  + Timeline: 27 years (1990-2017)
+  + Tickers: SPX
+  + Value: Adjusted Daily Close Price
 
