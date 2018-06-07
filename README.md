@@ -79,13 +79,13 @@ This project includes 3 models:
   + [portfolio_allocation.m](2_Portfolio_Allocation/portfolio_allocation.m): The function to perform equally-weighted portfolio(benchmark), mean-vairance and minimum-variance method using the portfolio object in Financial Toolbox
 
 + __Output__: 3 Excel files each with the following 4 columns
- 1. __tic__: the stock name
- 2. __predicted_return__: predicted return of next quarter by our model
- 3. __weights__: the weights to trade
- 4. __trade_date__: the date to execute the trades
-  + [equally_weighted portoflio](Data/2-portfolio_data/equally_weighted_user8.xlsx)  
-  + [mean_weighted portfolio ](Data/2-portfolio_data/mean_weighted_user8.xlsx) 
-  + [minimum_weighted portfolio ](Data/2-portfolio_data/minimum_weighted_user8.xlsx) 
+  1. __tic__: the stock name
+  2. __predicted_return__: predicted return of next quarter by our model
+  3. __weights__: the weights to trade
+  4. __trade_date__: the date to execute the trades
+    + [equally_weighted portoflio](Data/2-portfolio_data/equally_weighted_user8.xlsx)  
+    + [mean_weighted portfolio ](Data/2-portfolio_data/mean_weighted_user8.xlsx) 
+    + [minimum_weighted portfolio ](Data/2-portfolio_data/minimum_weighted_user8.xlsx) 
 
 
 
