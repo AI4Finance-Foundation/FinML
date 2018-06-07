@@ -74,7 +74,7 @@ This project includes 3 models:
 + __Script__: 1 Matlab Script
   + [portfolio_allocation.m](2_Portfolio_Allocation/portfolio_allocation.m): The function to perform equally-weighted portfolio(benchmark), mean-vairance and minimum-variance method using the portfolio object in Financial Toolbox
 
-+ __Output__: 3 Excel files 
++ __Output__: 3 Excel files each with the following 4 columns
  1. __tic__: the stock name
  2. __predicted_return__: predicted return of next quarter by our model
  3. __weights__: the weights to trade
@@ -91,8 +91,8 @@ This project includes 3 models:
   + [equally_weighted](Data/2-portfolio_data/equally_weighted_user8.xlsx) 
   + [mean_weighted](Data/2-portfolio_data/mean_weighted_user8.xlsx) 
   + [minimum_weighted](Data/2-portfolio_data/minimum_weighted_user8.xlsx) 
-  + [adjusted close price of S&P 500 stocks](Data/1-sp500_adj_price.csv.zip)
-  + [SPX adjusted close price](Data/1-spx_price.xlsx)
+  + [adjusted daily close price of S&P 500 stocks](Data/1-sp500_adj_price.csv.zip)
+  + [SPX adjusted daily close price](Data/1-spx_price.xlsx)
   
 + __Script__: 1 Python jupyter notebook Script
   + [fundamental_back_testing.ipynb](3_Back-testing/fundamental_back_testing.ipynb): The back-testing function
