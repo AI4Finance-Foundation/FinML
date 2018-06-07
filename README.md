@@ -72,13 +72,16 @@ This project includes 3 models:
   + The [adjusted close price data of S&P 500 stocks](2_Portfolio_Allocation/sp500_price.mat) to calculate covariance matrix
 
 + __Script__: 1 Matlab Script
-  + [portfolio_allocation.m](2_Portfolio_Allocation/portfolio_allocation.m): The function to perform mean-vairance and minimum-variance using the portfolio object in Financial Toolbox
+  + [portfolio_allocation.m](2_Portfolio_Allocation/portfolio_allocation.m): The function to perform equally-weighted portfolio(benchmark), mean-vairance and minimum-variance method using the portfolio object in Financial Toolbox
 
-+ __Output__: 3 Excel files performed by equally-weighted portfolio, mean-variance portfolio, and minimum-variance portfolio
-  + [equally_weighted](Data/2-portfolio_data/equally_weighted_user8.xlsx) includes __tic__: the stock name, __predicted_return__: predicted return of next quarter by our model, __weights__: the weights to trade, __trade_date__: the date to execute the trades
-  + [mean_weighted](Data/2-portfolio_data/mean_weighted_user8.xlsx) includes __tic__: the stock name, __predicted_return__: predicted return of next quarter by our model, __weights__: the weights to trade, __trade_date__: the date to execute the trades
-  + [minimum_weighted](Data/2-portfolio_data/minimum_weighted_user8.xlsx) includes __tic__: the stock name, __predicted_return__: predicted return of next quarter by our model, __weights__: the weights to trade, __trade_date__: the date to execute the trades
-
++ __Output__: 3 Excel files 
+ 1. __tic__: the stock name
+ 2. __predicted_return__: predicted return of next quarter by our model
+ 3. __weights__: the weights to trade
+ 4. __trade_date__: the date to execute the trades
+  + [equally_weighted portoflio](Data/2-portfolio_data/equally_weighted_user8.xlsx)  
+  + [mean_weighted portfolio ](Data/2-portfolio_data/mean_weighted_user8.xlsx) 
+  + [minimum_weighted portfolio ](Data/2-portfolio_data/minimum_weighted_user8.xlsx) 
 
 
 
