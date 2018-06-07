@@ -13,8 +13,8 @@ Stock recommendation, fundamental value investing, machine learning, model selec
 + We developed a practical approach to using machine-learning methods selecting S&P 500 stocks based on financial ratios (e.g., EPS, ROA, ROE, etc). Outperformed the S&P 500 index on out of sample data, achieved a Sharpe ratio of 0.5 (0.19 on SPX).
 + We performed feature selection by 11 GICS sectors based on a rolling window to choose the lowest MSE model among Linear Regression, Stepwise Regression, Regression with Ridge, Random Forest, and GBM. Applied a model ensemble method.
 
-![image](figs/chart10_insample.PNG)
-![image](figs/chart11_overallPerformance.PNG)
+<img src=figs/chart10_insample.PNG width="500">
+
 <img src=figs/chart11_overallPerformance.PNG width="500">
 
 ## Data: 
