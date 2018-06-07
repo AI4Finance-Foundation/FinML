@@ -15,6 +15,7 @@ Stock recommendation, fundamental value investing, machine learning, model selec
 
 ![image](figs/chart10_insample.PNG)
 ![image](figs/chart11_overallPerformance.PNG)
+<img src=figs/chart11_overallPerformance.PNG width="500">
 
 ## Data: 
 Retrieved from __WRDS (Wharton Research Data Services)__, Compustat Industrial [27 years daily and quarterly Data]
