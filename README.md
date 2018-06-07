@@ -94,7 +94,7 @@ This project includes 3 models:
 + __Script__: 1 Python jupyter notebook Script
   + [fundamental_back_testing.ipynb](3_Back-testing/fundamental_back_testing.ipynb): The back-testing function
 
-+ __Output__: 1 Excel file inlcudes all quarterly return and Sharpe ratio
++ __Output__: 1 Excel file inlcudes all quarterly return, annulized return and standard deviation, maximum drawdown, Sharpe ratio
 
 
 
