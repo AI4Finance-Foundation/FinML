@@ -1,7 +1,7 @@
 # Dynamic-Stock-Recommendation-Machine_Learning
 
 ## First Author: Published paper on IEEE TrustCom 2018 (http://www.cloud-conf.net/trustcom18/)
-Hongyang Yang, Xiao-Yang Liu, Qingwei W. [A Practical Machine Learning Approach for Dynamic Stock Recommendation](https://ssrn.com/abstract=3302088). IEEE TrustCom 2018. 
+Hongyang Yang, Xiao-Yang Liu, Qingwei W. [A Practical Machine Learning Approach for Dynamic Stock Recommendation](https://ssrn.com/abstract=3302088). IEEE TrustCom 2018.
 
 ## IEEE Official Link of the paper (https://ieeexplore.ieee.org/abstract/document/8456121)
 
@@ -103,6 +103,6 @@ This project includes 3 models:
 + __Script__: 1 Python jupyter notebook Script
   + [fundamental_back_testing.ipynb](3_Back-testing/fundamental_back_testing.ipynb): The back-testing function
 
-+ __Output__: [1 Excel file inlcudes](Data/3-backtesting_data/quarter_return_user8.xlsx)
++ __Output__:
   1. Quarterly return of our portfolio with transaction cost
   2. Performance Evaluation: total return, annulized return and standard deviation, maximum drawdown, Sharpe ratio
