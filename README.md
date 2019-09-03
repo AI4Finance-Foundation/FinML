@@ -85,9 +85,7 @@ This project includes 3 models:
   2. __predicted_return__: predicted return of next quarter by our model
   3. __weights__: the weights to trade
   4. __trade_date__: the date to execute the trades
-    + [equally_weighted portoflio](Data/2-portfolio_data/equally_weighted_user8.xlsx)  
-    + [mean_weighted portfolio ](Data/2-portfolio_data/mean_weighted_user8.xlsx)
-    + [minimum_weighted portfolio ](Data/2-portfolio_data/minimum_weighted_user8.xlsx)
+
 
 
 
