@@ -44,8 +44,6 @@ Retrieved from __WRDS (Wharton Research Data Services)__, Compustat Industrial [
   + Value: Adjusted Daily Close Price
 
 ## Code:
-This project includes 3 models:
-
 
 ### __Focasting Model__:
 + __Input__: 11 Excel files of cleaned data about fundamental financial ratios (sector 10-Energy, sector 15-Materials, sector 20-Industrials, sector 25-Consumer Discretionary, sector 30-Consumer Staples, sector 35-Health Care, sector 40-Financials, sector 45-Information Technology, sector 50-Telecommunication Services, sector 55-Utilities, sector 60-Real Estate)
