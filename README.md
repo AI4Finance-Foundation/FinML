@@ -50,7 +50,7 @@ Retrieved from __WRDS (Wharton Research Data Services)__, Compustat Industrial [
 + __Python Script__: 2 Scripts
   + [ml_model.py](code/ml_model.py): The forecasting function (cornerstone of this project)
   + [fundamental_run_model.py](fundamental_run_model.py): The main function to run the forecasting model  
-  .. code:: shell
+ .. code:: shell
    python3 fundamental_run_model.py -sector_name sector10 -fundamental Data/fundamental_final_table.xlsx -sector Data/1-focasting_data/sector10_clean.xlsx 
 
 + __Old R Script__: 3 R Scripts
