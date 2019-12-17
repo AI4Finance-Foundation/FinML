@@ -33,7 +33,7 @@ def prepare_rolling_train(df,features_column,label_column,date_column,unique_dat
     else:
         train=df[(df[date_column] >= unique_datetime[current_index-max_rolling_window_index]) \
                 & (df[date_column] < unique_datetime[current_index-testing_windows])]
-        
+
     X_train=train[features_column]
     y_train=train[label_column]
     return X_train,y_train
@@ -57,14 +57,14 @@ def train_linear_regression(X_train,y_train):
 
     lr_regressor = LinearRegression()
     model = lr_regressor.fit(X_train, y_train)
-    
+
     return model
 
 def train_recursive_feature_elimination(X_train,y_train):
 
     lr_regressor = LinearRegression(random_state = 42)
     model = RFE(lr_regressor)
-    
+
     return model
 
 def train_lasso(X_train, y_train):
@@ -104,7 +104,7 @@ def train_ridge(X_train, y_train):
     return model
 
 def train_random_forest(X_train, y_train):
-    
+
     random_grid = {
                    #'max_depth': [10, 20, 40, 80, 100, None],
                    'max_features': ['sqrt'],
@@ -120,23 +120,23 @@ def train_random_forest(X_train, y_train):
     # my_cv_rf = TimeSeriesSplit(n_splits=5).split(X_train_rf)
     rf = RandomForestRegressor(random_state=42)
     #RandomizedSearchCV
-    #randomforest_regressor = RandomizedSearchCV(estimator=rf, 
+    #randomforest_regressor = RandomizedSearchCV(estimator=rf,
     #                                            param_distributions=random_grid,
     #                                            n_iter = 100,
-    #                                            cv=3, 
-    #                                            n_jobs=-1, 
-    #                                            scoring=scoring_method, 
+    #                                            cv=3,
+    #                                            n_jobs=-1,
+    #                                            scoring=scoring_method,
     #                                            verbose=0)
     #GridSearchCV
-    randomforest_regressor = GridSearchCV(estimator=rf, 
+    randomforest_regressor = GridSearchCV(estimator=rf,
                                           param_grid=random_grid,
-                                          cv=3, 
-                                          n_jobs=-1, 
-                                          scoring=scoring_method, 
-                                          verbose=0)  
-    
+                                          cv=3,
+                                          n_jobs=-1,
+                                          scoring=scoring_method,
+                                          verbose=0)
+
     randomforest_regressor.fit(X_train, y_train)
-    print(randomforest_regressor.best_params_ )
+    #print(randomforest_regressor.best_params_ )
     model = randomforest_regressor.best_estimator_
     '''
     randomforest_regressor = RandomForestRegressor(random_state = 42,n_estimators = 400, max_features='auto')
@@ -158,9 +158,9 @@ def train_svm(X_train, y_train):
     # scoring_method = 'neg_mean_absolute_error'
     scoring_method = 'neg_mean_squared_error'
     #scoring_method = 'neg_mean_squared_log_error'
-    
+
     svm_regressor = GridSearchCV(estimator=svr, param_grid =param_grid_svm, cv=3, n_jobs=-1, scoring=scoring_method, verbose=0)
-    
+
     svm_regressor.fit(X_train, y_train)
     model = svm_regressor.best_estimator_
     #estimator = svm_regressor.best_estimator_
@@ -186,7 +186,7 @@ def train_gbm(X_train, y_train):
     gbm_regressor.fit(X_train, y_train)
     model = gbm_regressor.best_estimator_
     '''
-    
+
     gbm_regressor = GradientBoostingRegressor()
     model = gbm_regressor.fit(X_train, y_train)
     '''
@@ -230,7 +230,7 @@ def evaluate_model(model, X_test, y_test):
     y_predict = model.predict(X_test)
 
     mae = mean_absolute_error(y_test, y_predict)
-    
+
 
     mse = mean_squared_error(y_test, y_predict)
     #msle = mean_squared_log_error(y_test, y_predict)
@@ -248,7 +248,7 @@ def append_return_table(df_predict, unique_datetime, y_trade_return, trade_tic, 
 
 
 def run_4model(df,features_column, label_column,date_column,tic_column,
-              unique_ticker, unique_datetime, trade_date, 
+              unique_ticker, unique_datetime, trade_date,
               first_trade_date_index=20,
               testing_windows=4,
               max_rolling_window_index=44):
@@ -270,24 +270,24 @@ def run_4model(df,features_column, label_column,date_column,tic_column,
     for i in range(first_trade_date_index, len(unique_datetime)):
         try:
             # prepare training data
-            X_train, y_train = prepare_rolling_train(df, 
+            X_train, y_train = prepare_rolling_train(df,
                                                      features_column,
                                                      label_column,
-                                                     date_column, 
-                                                     unique_datetime, 
-                                                     testing_windows, 
-                                                     first_trade_date_index, 
+                                                     date_column,
+                                                     unique_datetime,
+                                                     testing_windows,
+                                                     first_trade_date_index,
                                                      max_rolling_window_index,
                                                      current_index=i
                                                      )
 
             # prepare testing data
-            X_test, y_test = prepare_rolling_test(df, 
+            X_test, y_test = prepare_rolling_test(df,
                                                   features_column,
                                                   label_column,
-                                                  date_column, 
-                                                  unique_datetime, 
-                                                  testing_windows, 
+                                                  date_column,
+                                                  unique_datetime,
+                                                  testing_windows,
                                                   first_trade_date_index,
                                                   current_index=i)
 
@@ -296,10 +296,10 @@ def run_4model(df,features_column, label_column,date_column,tic_column,
                                                              features_column,
                                                              label_column,
                                                              date_column,
-                                                             tic_column, 
-                                                             unique_datetime, 
-                                                             testing_windows, 
-                                                             first_trade_date_index, 
+                                                             tic_column,
+                                                             unique_datetime,
+                                                             testing_windows,
+                                                             first_trade_date_index,
                                                              current_index=i)
 
             # Training
@@ -323,13 +323,13 @@ def run_4model(df,features_column, label_column,date_column,tic_column,
 
 
             # Decide the best model
-            eval_data = [[lr_eval, y_trade_lr], 
+            eval_data = [[lr_eval, y_trade_lr],
                          [rf_eval, y_trade_rf] ,
                          [ridge_eval, y_trade_ridge],
                          [gbm_eval, y_trade_gbm]
                                 ]
             eval_table = pd.DataFrame(eval_data, columns=['model_eval', 'model_predict_return'],
-                                              index=['lr', 'rf','ridge','gbm'])        
+                                              index=['lr', 'rf','ridge','gbm'])
 
 
             evaluation_record[unique_datetime[i]]=eval_table
@@ -357,12 +357,12 @@ def run_4model(df,features_column, label_column,date_column,tic_column,
         except Exception:
             traceback.print_exc()
     df_evaluation = get_model_evaluation_table(evaluation_record,trade_date)
-    return (df_predict_lr, 
-            df_predict_rf, 
-            df_predict_ridge, 
+    return (df_predict_lr,
+            df_predict_rf,
+            df_predict_ridge,
             df_predict_gbm,
             df_predict_best,
-            df_best_model_name, 
+            df_best_model_name,
             evaluation_record,
             df_evaluation)
 
@@ -388,8 +388,8 @@ def save_model_result(sector_result,sector_name):
     df_best_model_name = sector_result[5]
     df_evaluation_score = sector_result[6]
     df_model_score = sector_result[7]
-    
-    
+
+
     df_predict_lr.to_csv('results/'+sector_name+'/df_predict_lr.csv')
     df_predict_rf.to_csv('results/'+sector_name+'/df_predict_rf.csv')
     df_predict_ridge.to_csv('results/'+sector_name+'/df_predict_ridge.csv')
@@ -405,7 +405,7 @@ def calculate_sector_daily_return(daily_price, unique_ticker,trade_date):
     daily_price_pivot = pd.pivot_table(daily_price, values='adj_price', index=['datadate'],
                        columns=['tic'], aggfunc=np.mean)
     daily_price_pivot=daily_price_pivot[unique_ticker]
-    
+
     daily_return=daily_price_pivot.pct_change()
     daily_return = daily_return[daily_return.index>=trade_date[0]]
     return daily_return
@@ -415,10 +415,10 @@ def calculate_sector_quarterly_return(daily_price, unique_ticker,trade_date_plus
                        columns=['tic'], aggfunc=np.mean)
     daily_price_pivot=daily_price_pivot[unique_ticker]
     quarterly_price_pivot=daily_price_pivot.ix[trade_date_plus1]
-    
+
     quarterly_return=quarterly_price_pivot.pct_change()
     quarterly_return = quarterly_return[quarterly_return.index>trade_date_plus1[0]]
-    
+
     return quarterly_return
 
 def pick_stocks_based_on_quantiles_old(df_predict_best):
@@ -441,7 +441,7 @@ def pick_stocks_based_on_quantiles_old(df_predict_best):
         quantile_50_75[df_predict_best.index[i]] = df_predict_best.iloc[i][(df_predict_best.iloc[i] > q_50) & \
                                                                                (df_predict_best.iloc[i] <= q_75)]
         quantile_75_100[df_predict_best.index[i]] = df_predict_best.iloc[i][(df_predict_best.iloc[i] > q_75)]
-    return (quantile_0_25, quantile_25_50, quantile_50_75, quantile_75_100)        
+    return (quantile_0_25, quantile_25_50, quantile_50_75, quantile_75_100)
 
 def pick_stocks_based_on_quantiles(df_predict_best):
 
@@ -455,10 +455,10 @@ def pick_stocks_based_on_quantiles(df_predict_best):
         q_70=df_predict_best.iloc[i].quantile(0.7)
 
         quantile_0_30[df_predict_best.index[i]] = df_predict_best.iloc[i][df_predict_best.iloc[i] <= q_30]
-                                                                             
+
 
         quantile_70_100[df_predict_best.index[i]] = df_predict_best.iloc[i][(df_predict_best.iloc[i] >= q_70)]
-    return (quantile_0_30, quantile_70_100)   
+    return (quantile_0_30, quantile_70_100)
 
 def calculate_portfolio_return(daily_return,trade_date_plus1,long_dict,frequency_date):
     df_portfolio_return = pd.DataFrame(columns=['portfolio_return'])
@@ -473,11 +473,11 @@ def calculate_portfolio_return(daily_return,trade_date_plus1,long_dict,frequency
             daily_return[(daily_return.index >= trade_date_plus1[i]) &\
                          (daily_return.index < trade_date_plus1[i + 1])][long_dict[trade_date_plus1[i]].index]
         # return * weight
-        long_daily_return = long_tic_return_daily 
+        long_daily_return = long_tic_return_daily
         df_temp = long_daily_return.mean(axis=1)
         df_temp = pd.DataFrame(df_temp, columns=['daily_return'])
         df_portfolio_return = df_portfolio_return.append(df_temp)
-    return df_portfolio_return    
+    return df_portfolio_return
 
 def calculate_portfolio_quarterly_return(quarterly_return,trade_date_plus1,long_dict):
     df_portfolio_return = pd.DataFrame(columns=['portfolio_return'])
@@ -493,7 +493,7 @@ def calculate_portfolio_quarterly_return(quarterly_return,trade_date_plus1,long_
         df_temp = long_tic_return.mean(axis=1)
         df_temp = pd.DataFrame(df_temp, columns=['portfolio_return'])
         df_portfolio_return = df_portfolio_return.append(df_temp)
-    return df_portfolio_return    
+    return df_portfolio_return
 
 def long_only_strategy_daily(df_predict_return, daily_return, trade_month_plus1, top_quantile_threshold=0.75):
     long_dict = {}
@@ -511,7 +511,7 @@ def long_only_strategy_daily(df_predict_return, daily_return, trade_month_plus1,
         # for long only
         #equally weight
         long_normalize_weight = 1/long_dict[trade_month_plus1[i]].shape[0]
-        
+
         # calculate weight based on predicted return
         #long_normalize_weight = \
         #long_dict[trade_month_plus1[i]] / sum(long_dict[trade_month_plus1[i]].values)
@@ -587,13 +587,3 @@ def plot_predict_return_distribution(df_predict_best,sector_name,out_path):
 
         plt.title(sector_name+": trade date - "+str(df_predict_best.index[i]),size=15)
     plt.savefig(out_path+str(df_predict_best.index[i])+".png")
-
-
-
-
-
-
-
-
-
-
