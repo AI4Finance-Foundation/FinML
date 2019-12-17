@@ -263,11 +263,10 @@ def run_4model(df,features_column, label_column,date_column,tic_column,
     df_predict_best = pd.DataFrame(columns=unique_ticker, index=trade_date)
     df_best_model_name = pd.DataFrame(columns=['model_name'], index=trade_date)
     evaluation_record = {}
-    # first_trade_date = '2013-07-31'
-    # fist_trade_date_index = 42
+    # first trade date is 1995-06-01
+    # fist_trade_date_index = 20
     # testing_windows = 6
 
-    #for i in range(first_trade_date_index, 43):
     for i in range(first_trade_date_index, len(unique_datetime)):
         try:
             # prepare training data
