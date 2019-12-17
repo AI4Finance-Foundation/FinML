@@ -54,14 +54,6 @@ Retrieved from __WRDS (Wharton Research Data Services)__, Compustat Industrial [
 + __Old R Script__: 3 R Scripts
   + [fundamental_run_model.R](code/fundamental_run_model.R): The main function to run the forecasting model
   + [fundamental_ML_model.R](code/fundamental_ML_model.R): The forecasting function (cornerstone of this project)
-    + Model Outputs:
-      1. model test error to select models
-      2. trade period predicted return to select stocks
-      3. linear regression features
-      4. random forest features
-      5. ridge features
-      6. stepwise regression features
-      7. gbm features
   + [fundamental_select_stock.R](code/fundamental_select_stock.R): The function to select top 20% stocks in each sector
 + __Output__: [a CSV file](Data/2-portfolio_data/stocks_selected_total_user8.csv) includes __tic__: the stock name, __predicted_return__: predicted return of next quarter by our model, __trade_date__: the date to execute the trades
 
