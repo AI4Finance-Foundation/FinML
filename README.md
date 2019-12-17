@@ -48,7 +48,7 @@ Retrieved from __WRDS (Wharton Research Data Services)__, Compustat Industrial [
 ### __Focasting Model__:
 + __Input__: 11 Excel files of cleaned data about fundamental financial ratios (sector 10-Energy, sector 15-Materials, sector 20-Industrials, sector 25-Consumer Discretionary, sector 30-Consumer Staples, sector 35-Health Care, sector 40-Financials, sector 45-Information Technology, sector 50-Telecommunication Services, sector 55-Utilities, sector 60-Real Estate)
 + __Python Script__: 2 Scripts
-  + [ml_model.py](code/ml_model.py): The model script
+  + [ml_model.py](code/ml_model.py): The forecasting function (cornerstone of this project)
   + [fundamental_run_model.py](fundamental_run_model.py): The main function to run the forecasting model  
 
 + __Old R Script__: 3 R Scripts
