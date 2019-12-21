@@ -245,7 +245,7 @@ def evaluate_model(model, X_test, y_test):
 def append_return_table(df_predict, unique_datetime, y_trade_return, trade_tic, current_index):
     tmp_table = pd.DataFrame(columns=trade_tic)
     tmp_table = tmp_table.append(pd.Series(y_trade_return, index=trade_tic), ignore_index=True)
-    df_predict.loc[unique_datetime[current_index]] = tmp_table.loc[0]
+    df_predict.loc[unique_datetime[current_index]][tmp_table.columns] = tmp_table.loc[0]
 
 
 def run_4model(df,features_column, label_column,date_column,tic_column,
